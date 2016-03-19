@@ -43,12 +43,16 @@ Win32: [![Win32 status](https://ci.appveyor.com/api/projects/status/kkmx5uptnx14
 #### Build process
   1. From an SSH command-line session, navigate to your home directory: `cd ~`
   1. Clone this repository with the `--recursive` flag to ensure all submodules are cloned: `git clone --recursive https://github.com/wirebirdlabs/featherweight-lib.git`
-  1. Invoke build system generation: `./autogen.sh`
-  1. Configure library for your system: `./configure`
-  1. Build library: `make`
+
+Now if you're feeling lucky, just run this: `~/featherweight-lib/build-ftw.sh`
+
+Otherwise:
+  1. Invoke build system generation: `~/featherweight-lib/autogen.sh`
+  1. Configure library for your system: `~/featherweight-lib/configure`
+  1. `cd ~/featherweight-lib`
+  1. Build library: `make `
   1. Run unit tests: `make check`
   1. Install library: `make install`
-
 
 ##Building for Windows
 
